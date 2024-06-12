@@ -6,7 +6,7 @@ body {
 }
 
 header {
-  background-color: #079cf8;
+  background-color: #0970b0;
   color: white;
   padding: 1rem 0;
   text-align: center; /* Menengahkan secara horizontal */
@@ -95,7 +95,9 @@ section {
 #slide-6:target ~ .portfolio-item {
   margin-left: -500%;
 }
-
+#slide-7:target ~ .portfolio-item {
+  margin-left: -600%;
+}
 .navigation a {
   display: inline-block;
   height: 25px;
