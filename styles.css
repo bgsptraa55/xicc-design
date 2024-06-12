@@ -6,7 +6,7 @@ body {
 }
 
 header {
-  background-color: #0970b0;
+  background-color: #079cf8;
   color: white;
   padding: 1rem 0;
   text-align: center; /* Menengahkan secara horizontal */
@@ -56,25 +56,73 @@ section {
   height: auto;
 }
 
-.portfolio-container {
-  background-color: #ffffff;
-  background-size: auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem;
-}
-
 .portfolio-item {
-  flex: 1 1 calc(33.333% - 1rem);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  width: 100%;
+  transition: 3s;
 }
-
 .portfolio-item img {
   width: 100%;
-  height: auto;
+}
+.wrapper {
+  width: 800px;
+  margin: auto;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
 }
 
+#slide-1:target ~ .portfolio-item {
+  margin-left: 0px;
+}
+
+#slide-2:target ~ .portfolio-item {
+  margin-left: -100%;
+}
+
+#slide-3:target ~ .portfolio-item {
+  margin-left: -200%;
+}
+
+#slide-4:target ~ .portfolio-item {
+  margin-left: -300%;
+}
+
+#slide-5:target ~ .portfolio-item {
+  margin-left: -400%;
+}
+
+#slide-6:target ~ .portfolio-item {
+  margin-left: -500%;
+}
+
+.navigation a {
+  display: inline-block;
+  height: 25px;
+  width: 25px;
+  background-color: #dedede;
+  font-size: 0;
+  border-radius: 50%;
+  margin: 3px;
+  transition: 1s;
+}
+.navigation a:hover {
+  background-color: #666;
+}
+
+.navigation {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+@media screen and (max-width: 800px) {
+  .wrapper {
+    width: 90%;
+  }
+}
 .order-now {
   background-color: #28a745;
   color: white;
@@ -85,7 +133,7 @@ section {
 }
 
 footer {
-  background-color: #006eb3;
+  background-color: #079cf8;
   color: white;
   text-align: center;
   padding: 1rem 0;
